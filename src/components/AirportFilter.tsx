@@ -2,7 +2,7 @@ import React from 'react'
 
 function AirportFilter() {
   return (
-    <div>
+    <div className='border px-2 py-4 mb-2'>
         AirportFilter
     </div>
   )
