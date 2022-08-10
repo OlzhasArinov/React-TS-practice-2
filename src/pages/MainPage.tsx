@@ -34,14 +34,14 @@ function MainPage() {
             airports.map(airport => <AirportCard key={airport.id} airport={airport} />)
         }
 
-        <ReactPaginate
+        {pageCount && <ReactPaginate
             breakLabel="..."
             nextLabel=">"
             onPageChange={pageChangeHandler}
             pageRangeDisplayed={3}
             pageCount={pageCount}
             previousLabel="<"
-        />
+        />}
     </div>
   )
 }
